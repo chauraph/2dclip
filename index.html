@@ -66,21 +66,22 @@
       </div>
   
         <div id="step1">
-          <h1>image-atlas</h1>
+          <h1>2DCLIP</h1>
   
-          <p> maps an image dataset by textual descriptions
+          <p> maps an image dataset by textual descriptions using "AI" (CLIP).
+            Confused? Read the <a href="https://github.com/leoimpett/impett-offert-2023" target="_blank">paper</a>!
           </p>
           
           <table style="width:100%">
             <tr>
-              <td style="width:50%" class="step1hover">load local dataset:
+              <td style="width:50%" class="step1hover">upload images:
   
                 <br><br>
   
                 <button  onclick="doAll()">choose folder</button>
               
               </td>
-              <td class="step1hover">load cloud dataset:
+              <td class="step1hover">precomputed corpus:
                 
                 <br><br>
   
@@ -106,7 +107,7 @@
   
   
           <div class="step1hover">
-       choose backend:
+       choose backend network:
        <br><br>
        <select onchange="window.MODEL_NAME=this.value;" class="step1selector" >
         <option value="clip_vit_32_uint8">Small (low memory/bandwidth)</option>  
@@ -129,7 +130,7 @@
   
             <div id="step2" class="grow" style="display:none">
   
-            <h2>image-atlas</h2>
+            <h2>2DCLIP</h2>
   
   
               <!-- <p class="smallhelp">Enter any two search terms in the fields below - the similarity between the image and the term will control the position of the image. You can try concrete terms or abstract concepts. <br>
